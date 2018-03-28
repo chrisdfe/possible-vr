@@ -2,7 +2,7 @@
   <head>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
-    <script src="dist/index.js"></script>
+    <title><%= testTitle %></title>
   </head>
   <body>
     <a-scene background="color: #222">
@@ -13,11 +13,11 @@
           material="color: red"
         ></a-mixin>
 
-        <img id="jbl" src="public/images/jbl.jpg">
-        <img id="star" src="public/images/star.png">
+        <img id="jbl" src="/images/jbl.jpg">
+        <img id="star" src="/images/star.png">
 
-        <a-asset-item id="fireplace-obj" src="public/models/fireplace/am.obj"></a-asset-item>
-        <a-asset-item id="fireplace-mtl" src="public/models/fireplace/am.mtl"></a-asset-item>
+        <a-asset-item id="fireplace-obj" src="/models/fireplace/am.obj"></a-asset-item>
+        <a-asset-item id="fireplace-mtl" src="/models/fireplace/am.mtl"></a-asset-item>
       </a-assets>
 
       <a-entity mixin="marker" position="-2.5 0.7 0.01"></a-entity>
@@ -166,5 +166,7 @@
         <a-entity camera look-controls wasd-controls></a-entity>
       </a-entity>
     </a-scene>
+
+    <script src="/scripts/index.js"></script>
   </body>
 </html>

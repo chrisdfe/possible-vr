@@ -1,10 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const context = {
+  pageTitle: 'Test',
+};
+
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public/scripts'),
     filename: 'index.js'
   },
   module: {
@@ -21,11 +25,12 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
-      inject: true
-    }),
-  ],
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     ...context,
+  //     filename: 'index.html',
+  //     template: 'index.html',
+  //     inject: true
+  //   }),
+  // ],
 };

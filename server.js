@@ -1,13 +1,20 @@
-var express = require('express');
-var path = require('path');
-var serveStatic = require('serve-static');
+const express = require('express');
+const path = require('path');
+const serveStatic = require('serve-static');
 
 app = express();
 console.log('Serving from: ' + __dirname + '/dist/');
-app.use(serveStatic(__dirname + '/dist/'));
 app.use(serveStatic(__dirname + '/public/'));
 
-var port = process.env.PORT || 5000;
+app.set('view engine', 'ejs');
+
+const port = process.env.PORT || 5000;
+
+app.get('/', (req, res) => {
+  res.render('index', {
+    testTitle: 'Here is the test page title',
+  });
+});
 
 app.listen(port);
 console.log('server started '+ port);

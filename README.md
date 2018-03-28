@@ -15,7 +15,16 @@ npm install -g yarn
 
 ## Development
 
-Run
+Run these two commands in separate tabs:
+1) To start the node server
 ```
-yarn dev
+yarn start
 ```
+
+You should be able to visit [localhost:5000](http://localhost:5000/).
+
+2) To start webpack:
+```
+bin/webpack
+```
+webpack will watch files in `src/` and recompile when you make changes to them.
