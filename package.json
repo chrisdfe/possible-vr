@@ -1,5 +1,5 @@
 {
-  "name": "Possible VR",
+  "name": "Possible-VR",
   "version": "3.0.1",
   "description": "",
   "dependencies": {
@@ -19,5 +19,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "publish": "npm run build && gh-pages -d build"
-  },
+  }
 }
