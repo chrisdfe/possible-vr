@@ -17,5 +17,7 @@ npm install -g yarn
 
 Run
 ```
-yarn dev
+yarn start
 ```
+
+You should be able to visit [localhost:3000](http://localhost:3000/).
