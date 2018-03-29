@@ -59,6 +59,14 @@ class App extends React.Component {
         <Fireplace />
         */}
 
+       <a-image
+        src={PUBLIC_URL + '/images/bear/bear1.png'}
+        position="-3 0.5 -3"
+        rotation="0 0 0"
+        width="1"
+        height="1"
+       />
+
         {lawyerList.map((lawyer, index) => (
           <LawyerCard
             key={index}
