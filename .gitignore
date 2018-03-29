@@ -1,4 +1,4 @@
 node_modules/
-dist/
+public/scripts/
 .DS_Store
 .idea
